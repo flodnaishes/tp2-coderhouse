@@ -1,0 +1,54 @@
+import React, { useState } from 'react';
+import { Text, View } from 'react-native';
+
+import CheckBox from 'react-native-check-box';
+
+export default function App() {
+  const [isChecked, setIsChecked] = useState({
+    
+   
+  });
+
+  return (
+    <View style={{padding:70}}>
+      <Text style ={{fontSize: 25, fontweight:'arial',color: 'black', marginBottom: 25}}>
+        selecciona al campeon 
+      </Text>
+      <CheckBox>
+      isChecked={isChecked} 
+      onClick={()=> setIsChecked(!isChecked)} 
+      rightText= "francia" 
+      rightTextStyle= {{fontSize: 19, color: 'green', fontWeight:'bolt'}}
+      checkBoxColor="green"
+      uncheckedCheckBoxColor='blue'
+      
+
+      </CheckBox>
+
+      <CheckBox>
+        style{{marginBottom:16}}
+      isChecked={isChecked} 
+      onClick={()=> setIsChecked(!isChecked)} 
+      rightText= "argentina" 
+      rightTextStyle= {{fontSize: 19, color: 'green', fontWeight:'bolt'}}
+      checkBoxColor="green"
+      uncheckedCheckBoxColor='blue'
+      
+
+      </CheckBox>
+
+   <CheckBox>
+   style{{marginBottom:16}}
+      isChecked={isChecked} 
+      onClick={()=> setIsChecked(!isChecked)} 
+      rightText= "uruguay" 
+      rightTextStyle= {{fontSize: 19, color: 'green', fontWeight:'bolt'}}
+      checkBoxColor="green"
+      uncheckedCheckBoxColor='blue'
+      
+
+      </CheckBox>
+    </View>
+  );
+}
+  
